@@ -1,11 +1,41 @@
-body{
-    background-color: black;
-    color: white;
+*{
+    box-sizing: border-box;
 }
 
+body{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,.8)) ,url(../image/5652027.png) no-repeat center center fixed;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    margin: 0;
+    opacity: 0.9;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 80%;
+    margin: 50px auto;
+    background: rgba(56, 55, 55, 0.8); /* Optional: Adds readability */
+    opacity: 0.6;
+    padding: 20px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .banner{
-    background: linear-gradient(rgba(50, 46, 46, 0.8), rgba(0,0,0,.8)) ,url(../image/5652027.png);
-    background-size: contain;
+    background: linear-gradient(rgba(50, 46, 46, 0.8), rgba(0,0,0,.8)) ,url(../image/5652027.png) no-repeat center center fixed;
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -53,7 +83,7 @@ body{
     flex-wrap: wrap;
     justify-content: center; /* Center images */
     gap: 20px; /* Adjust space between items */
-    padding: 20px;
+    padding: 10px;
 }
 
 .image-container {
@@ -84,3 +114,31 @@ body{
     }
 }
 
+.porject{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center images */
+    gap: 20px; /* Adjust space between items */
+}
+
+.project-container{
+
+    border: black solid 3px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(250, 249, 249, 0.2);
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    width: 450px;
+    height: auto;
+    margin: 40px;
+    background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url(../image/chataa.png);
+    /* opacity: 0.3; */
+    color: black;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project-container:hover{
+    transform: scale(1.1);
+}
