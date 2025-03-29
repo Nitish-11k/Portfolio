@@ -25,4 +25,10 @@ public class MyController {
         model.addAttribute("title", "About Me");
         return "about";
     }
+
+    @RequestMapping("/project")
+    public String projectPage(Model model){
+        model.addAttribute("title", "Project");
+        return "project";
+    }
 }
